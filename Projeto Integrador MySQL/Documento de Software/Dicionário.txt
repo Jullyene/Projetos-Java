@@ -1,0 +1,50 @@
+TABELAS(Descrição):
+Eventos_Desempenho_realizaao_atividades
+->É uma tabela sem id (sem uma chave primária), apenas de relacionamento
+
+Eventos
+->Classificaar os eventos dos alertas em (leve,moderado,alto)
+
+Alertas
+->Com os produtos mais vencidos e os menos vencidos, fazendo uma comparação entre os dados de entrada e de saída para o baixo estoque.Quantidade de produtos vencidos, as tendências de mercado, de produtos que possuem uma certa queda ou aumento de venda e que seguem uma linha de raciocínio.
+->Notificações de produtos que estão próximos de vencer num intervalo de 15 dias, listar eles diretamente pela tabela produto.
+
+Usuarios
+->Com nome, senha criptografada sob hash, com nível de acesso,podendo ser: 
+*Acesso total
+*Acesso a leitura e gravação
+*Acesso a leitura
+
+Desempenho_realizacao_atividades
+->Com andamento da atividade baseada na metodologia ágil (Kanban),À FAZER, FAZENDO E FEITO e a descrição da atividade em questão.
+
+Categoria_produto
+->Classificar os produtos conforme sua categoria, que pode ser:
+->Higiene e Beleza
+->Limpeza e Bazar
+->Refrigeradores
+->FLV
+->Laticínios
+->Mercearia
+->Bebidas
+->Padaria
+->Açougue
+->Peixaria
+
+Vendas
+->Dados de venda, a quantidade vendida, data da venda, valor unitário, valor total
+
+Registro_Entrada
+->Logo quando chega mercadoria no depósito, ter em mãos a quantidade por produto, origem(de onde veio, empresa ou filial),nome do conferente que recebeu a mercadoria.
+
+Produto
+->Nome do produto, quantidade, descrição se ele está presente na prateleira ou no depósito ou talvez esteja em falta.Preço do produto, nome do fornecedor,status de disponibilização 1-SIM 0-NÃO,data de vencimento e código identificador(código de barras com 13 números)
+
+
+(Melhorias que poderiam ser aplicadas)
+->Criar uma coluna para alto_estoque na tabela Alertas
+->Aprimorar para leitura de código identificador por scanner
+->Criar uma nova tabela para gerar nível de satisfacao_funcionarios, com colunas de reações e descrição do problema ou reforçar pontos fortes e positivos e buscar resolver os pontos negativos(Isso seria interessante para a gerente ou chefe de loja montar uma reunião e conversar sobre esses pontos)
+->Criar ou aprimorar como são passadas as quantidades dos produtos, que podem ser quantidade_unitario ou quantidade_kg (quantidade por kg)
+->Poderia ser algo em conjunto com esse banco para criação de um projeto de automação, listar mercados de um uma região e coletar informações dos preços dos produtos e compará-los, para fins de marketing e entender o mercado competidor.
+->Outra coisa interessante que poderia ser adicionada é gerar uma planilha semanal ou quando necessário desses dados de validade pelo próprio sistema.

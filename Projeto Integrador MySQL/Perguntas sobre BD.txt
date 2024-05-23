@@ -1,0 +1,15 @@
+1- Qual é a importância do banco de dados (BD) em uma empresa?
+
+2- Quais são os principais tipos de banco de dados utilizados em empresas?
+
+3- Como os bancos de dados são usados para gerenciar dados de clientes?
+
+4- Como os bancos de dados são usados para otimizar processos internos?
+
+5- Como os bancos de dados são utilizados para tomada de decisões?
+
+6- Quais são os desafios comuns no uso de bancos de dados em empresas?
+
+7- Como funcionam os bancos de dados em empresas de jogos, por exemplo da EPIC GAMES entre outras?
+
+8- Poderia me explicar mais sobre: "Para relacionar os resultados de duas junções diferentes, você pode usar uma subconsulta ou uma tabela derivada."?
